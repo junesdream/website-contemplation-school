@@ -1,24 +1,19 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Header from './components/pages/Header';
+import Section from './components/pages/Section';
+import Details from "./components/pages/Details";
+import Carousel from "./components/pages/Carousel";
+import { Data } from './components/rubrik/Data';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+		<div className="App">
+			<Header />
+			<Section />
+			<Details />
+			<Carousel slides={Data} />		
+		</div>
   );
 }
 

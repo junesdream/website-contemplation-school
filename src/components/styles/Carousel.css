@@ -1,0 +1,26 @@
+.carousel {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('https://images.pexels.com/photos/4119179/pexels-photo-4119179.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+}
+.carousel-img {
+    width: 900px;
+    border: 5px solid transparent;
+  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-image-slice: 1;
+}
+.arrows {
+    cursor: pointer;
+    color: var(--clr-white);
+}
+.arrow-b {
+    position: absolute;
+    left: 2%;
+}
+.arrow-f {
+    position: absolute;
+    right: 2%;
+}

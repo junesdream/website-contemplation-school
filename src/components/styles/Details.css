@@ -1,0 +1,47 @@
+.details {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(var(--sec-bg)),url('https://images.pexels.com/photos/3826588/pexels-photo-3826588.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    color: var(--clr-white);
+    padding-inline: 4em;
+}
+.details > * {
+    text-align: center;
+    cursor: pointer;
+}
+
+.details-header {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.details-text span {
+    display: block;
+    font-size: clamp(3.5rem,12vw + 1rem,8rem);
+    color: hsl(var(--clr-glass)0,0);
+}
+.details-text p {
+    color: var(--clr-gray);
+    text-transform: uppercase;
+    padding-block: .5rem;
+    font-size: clamp(.4rem,1vw + .4rem,12rem);
+}
+.details-text p:hover {
+    color: var(--clr-white);
+    transform: scale(115%);
+    transition: 250ms;
+}
+
+.done-btn {
+    margin-block: 1.543rem;
+}
+.done-btn a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--clr-white);
+    padding: 1rem;
+    background-color: hsl(var(--clr-glass));
+}

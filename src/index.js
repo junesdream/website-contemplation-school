@@ -1,17 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import App from "./App";
+import Contact from "./components/pages/Contact";
+import About from "./components/pages/About";
+import Contemplation from "./components/pages/Contemplation";
+import Vision from "./components/pages/Vision";
+import Pricing from "./components/pages/Pricing";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+	<Router>
+		<Routes>
+			<Route path="/" element={<App />} />
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+			<Route path="/contemplation" element={<Contemplation />} />
+			<Route path="/vision" element={<Vision />} />
+			<Route path="/pricing" element={<Pricing />} />
+			<Route path="/contact" element={<Contact />} />
+			<Route path="/about" element={<About />} />
+		</Routes>
+	</Router>,
+
+	document.getElementById("root")
+);
